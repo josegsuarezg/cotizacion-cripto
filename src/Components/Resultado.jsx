@@ -4,13 +4,16 @@ import styled from '@emotion/styled';
 const Contenido = styled.div`
   color: #fff;
   font-family: 'Lato', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   img {
     width: 25%;
     display: block;
     margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 `;
 
@@ -27,11 +30,15 @@ const Precio = styled.h1`
 const Texto = styled.h2`
   color: #c3c3c3;
   text-align: center;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 700;
   margin: 0;
   span {
     font-weight: 300;
+  }
+  @media (min-width: 768px){
+    font-size: 16px;
+    
   }
 `;
 
